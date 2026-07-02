@@ -318,6 +318,12 @@
   .scrollbar-none {
     scrollbar-width: none;
   }
+
+  /* Galmuri (Korean pixel font) glyphs need more vertical room than the
+     Latin pixel font's line-height:1 allows, or their tops/bottoms clip. */
+  :root[data-locale='ko'] .leading-none {
+    line-height: 1.3;
+  }
 }
 
 @layer components {
